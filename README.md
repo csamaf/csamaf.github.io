@@ -10,7 +10,7 @@ The current [requirements.txt](requirements.txt) are known to work with Python 3
 
 ### Using make
 
-Following the [deploy.yml](.github/workflows/deploy.yml) workflow by executing
+Executing
 
 ```bash
 python3.11 -m venv venv
