@@ -1,5 +1,3 @@
-**NOTE: the purpose of this fork was to demonstrate how to strip the upstream repo down to the bare minimum, it is now archived (2024-04-19)!**
-
 # Personal website and blog
 
 This site is inspired by and copied from https://github.com/choldgraf/choldgraf.github.io.
