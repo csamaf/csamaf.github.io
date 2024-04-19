@@ -1,5 +1,5 @@
 ---
-name: sanity checks
+name: Sanity checks
 
 on:
   merge_group:
@@ -123,7 +123,7 @@ jobs:
         mailmap = Path('.mailmap').resolve()
         if not mailmap.exists():
             print(f'No mailmap found at {mailmap}')
-            sys.exit(0)
+            sys.exit(1)
         contents = mailmap.read_text()
         assert len(contents) > 0
         # completely missing from mailmap
