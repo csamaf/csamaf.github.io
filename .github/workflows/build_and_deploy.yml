@@ -1,0 +1,49 @@
+---
+name: Build and Deploy site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+
+jobs:
+  build_site:
+    name: Build site
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Build the site
+      run: |
+        make dirhtml
+    - name: Upload html artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: _build/dirhtml
+  deploy_site:
+    name: Deploy site (on push to main)
+    runs-on: ubuntu-22.04
+    needs: [build_site]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write          # to deploy to Pages
+      id-token: write       # to verify the deployment originates from an appropriate source
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4.0.5
+            # feature is still in private alpha
+            #   with:
+            #     preview: ${{ github.ref != 'refs/heads/main' }}
