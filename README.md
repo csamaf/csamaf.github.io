@@ -10,6 +10,7 @@ The current [requirements.txt](requirements.txt) are known to work with Python 3
 
 ### Using make
 
+We following the [build_and_deploy.yml](.github/workflows/build_and_deploy.yml) workflow.
 Executing
 
 ```bash
