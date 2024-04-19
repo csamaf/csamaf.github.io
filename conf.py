@@ -54,7 +54,7 @@ html_theme_options = {
     ],
 }
 
-html_favicon = "CONF_PY_HTML_FAVICON"
+html_favicon = "static/favicon-32x32.png"
 html_title = "CONF_PY_HTML_TITLE"
 html_static_path = ["static"]
 html_sidebars = {
