@@ -1,5 +1,7 @@
-# -- Project information -----------------------------------------------------
 import sys
+from pathlib import Path
+
+# -- Project information -----------------------------------------------------
 
 sys.path.append("scripts")
 sys.path.append(".")
@@ -74,7 +76,6 @@ rediraffe_redirects = {}
 redirect_folders = {
     "posts": "blog",
 }
-from pathlib import Path
 
 for old, new in redirect_folders.items():
     for newpath in Path(new).rglob("**/*"):
