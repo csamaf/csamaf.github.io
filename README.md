@@ -40,4 +40,3 @@ pipx run nox -s site -- live
 ```
 
 which watches for local changes.
-
