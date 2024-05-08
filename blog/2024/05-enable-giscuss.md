@@ -1,7 +1,7 @@
 ---
 date: "2024-05-08"
-category: TodayILearned
-tags: Github, Giscus
+category: today-i-learned
+tags: Github, Giscus, meta
 author: Felix
 ---
 
