@@ -1,6 +1,6 @@
 # Personal website and blog
 
-This site is inspired by and copied from https://github.com/choldgraf/choldgraf.github.io.
+This site is inspired by and copied from [https://github.com/choldgraf/choldgraf.github.io](https://github.com/choldgraf/choldgraf.github.io).
 
 ## Building the site locally
 

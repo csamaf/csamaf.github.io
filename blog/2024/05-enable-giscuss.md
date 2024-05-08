@@ -14,9 +14,10 @@ Basically, follow the instructions on [giscus.app](https://giscus.app/):
 - create a new discussion category
   - `Category name`: `Blog comments`
   - `Discussion Format`: `Open-ended discussion`
-- select newly created category on https://giscus.app/
+- select newly created category on [giscus.app/](https://giscus.app/)
 - create `templates/layout.html` with the following data (adapt to your needs)
-  ```
+
+  ```django
   {%- extends "pydata_sphinx_theme/layout.html" %}
 
   {% block docs_body %}
@@ -37,4 +38,5 @@ Basically, follow the instructions on [giscus.app](https://giscus.app/):
   </script>
   {% endblock %}
   ```
+
 - ensure to have `templates_path = ["templates"]` in your `conf.py`
