@@ -16,3 +16,4 @@ So the steps are:
 2. Add the new author to the `conf.py` file.
 3. Add a new ignore pattern in the markdown link checker config.
 4. Update `.mailmap`
+5. Add a blog entry with the `category: introductions`
