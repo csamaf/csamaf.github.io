@@ -32,6 +32,8 @@ exclude_patterns = [
     "*import_posts*",
     "**/pandoc_ipynb/inputs/*",
     ".nox/*",
+    ".venv",
+    "venv",
     "README.md",
     "LICENSE.md",
     "**/.ipynb_checkpoints/*",
