@@ -98,6 +98,7 @@ blog_baseurl = f"{BASE_URL}"
 blog_title = f"{PROJECT} Blog"
 blog_authors = {
     "Felix": ("Felix Schindler", f"{blog_baseurl}/about/felix/"),
+    "René": ("René Fritze", f"{blog_baseurl}/about/rene/"),
 }
 blog_path = "blog"
 blog_post_pattern = "blog/*/*"

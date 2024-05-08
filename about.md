@@ -2,7 +2,8 @@
 
 ```{toctree}
 :hidden:
-about/felix
+:glob:
+about/*
 ```
 
 This site serves as a public place to share, post, and host content for a group of _Computational Scientists, Applied Mathematicians, and friends_ (hence the title).
