@@ -4,5 +4,11 @@
         {
             "pattern": "exhale/library_root"
         }
+    ],
+    "replacementPatterns": [
+        {
+            "pattern": "about/felix",
+            "replacement": "about/felix.md"
+        }
     ]
 }
