@@ -2,6 +2,7 @@
 
 {% block docs_body %}
 {{ super() }}
+{% if 'comments' in meta and meta.comments != 'False' %}
 <!-- Add a comment box underneath the page's content -->
 <script src="https://giscus.app/client.js"
         data-repo="csamaf/csamaf.github.io"
@@ -16,4 +17,5 @@
         crossorigin="anonymous"
         async>
 </script>
+{% endif %}
 {% endblock %}

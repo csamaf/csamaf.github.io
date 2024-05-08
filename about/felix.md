@@ -1,6 +1,10 @@
+---
+comments: false
+---
+
 # Felix Schindler
 
-![](schindler_felix_mm.jpg)
+![Image of Felix Schindler](schindler_felix_mm.jpg)
 
 **Numerical Analysis | Model Order Reduction | Computational Science**
 

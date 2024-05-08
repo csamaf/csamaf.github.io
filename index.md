@@ -1,5 +1,6 @@
 ---
 html_theme.sidebar_secondary.remove: true
+comments: false
 ---
 
 # CS-AM-AF
