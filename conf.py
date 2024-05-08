@@ -94,7 +94,9 @@ for old, new in redirect_folders.items():
 
 blog_baseurl = f"{BASE_URL}"
 blog_title = f"{PROJECT} Blog"
-blog_authors = {}
+blog_authors = {
+    "Felix": ("Felix Schindler", f"{blog_baseurl}/about/felix/"),
+}
 blog_path = "blog"
 blog_post_pattern = "blog/*/*"
 blog_feed_fulltext = True
