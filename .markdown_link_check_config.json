@@ -9,6 +9,10 @@
         {
             "pattern": "about/felix",
             "replacement": "about/felix.md"
+        },
+        {
+            "pattern": "about/rene",
+            "replacement": "about/rene.md"
         }
     ]
 }
