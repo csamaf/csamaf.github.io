@@ -1,7 +1,8 @@
 ---
 date: "2024-05-08"
-category: Introductions
+category: introductions
 author: René
+comments: false
 ---
 
 # Introduction: this is René Fritze
