@@ -6,6 +6,7 @@ comments: false
 
 ![Image of Felix Schindler](schindler_felix_mm.jpg)
 
+<!-- pyml disable-next-line no-emphasis-as-heading-->
 **Numerical Analysis | Model Order Reduction | Computational Science**
 
 I am currently

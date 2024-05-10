@@ -1,0 +1,7 @@
+plugins:
+  md013:
+    enabled: true
+    line_length: 119
+extensions:
+  front-matter:
+    enabled: true

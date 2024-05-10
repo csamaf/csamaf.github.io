@@ -19,7 +19,6 @@ Our blog
 :::
 ::::
 
-
 ## Recent blog posts
 
 ```{postlist}
