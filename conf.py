@@ -6,8 +6,7 @@ from pathlib import Path
 sys.path.append("scripts")
 sys.path.append(".")
 
-# BASE_URL = "https://csamaf.github.io"
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "https://csamaf.github.io"
 PROJECT = "CS-AM-AF"
 PROJECT_LONG = "Computational Scientists, Applied Mathematicians, and Friends"
 
