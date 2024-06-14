@@ -14,3 +14,4 @@ sphinx-examples<=0.0.5
 sphinxcontrib-bibtex<=2.6.1
 sphinxext-opengraph<=0.8.2
 sphinxext-rediraffe<=0.2.7
+typer<0.13

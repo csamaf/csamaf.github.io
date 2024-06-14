@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csamaf_blog"
+dynamic = ["dependencies"]
+version = "0.0.1"
+
+[tool.scripts]
+new-til = "csamaf_blog.new_til:main"
+
+[tool.setuptools]
+packages = ["csamaf_blog"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.scripts]
+new-til = "csamaf_blog.new_til:main"

@@ -55,7 +55,7 @@ html_theme_options = {
         },
         {
             "name": "Blog RSS feed",
-            "url": f"{BASE_URL}/blog/atom.xml",
+            "url": f"{BASE_URL}/csamaf_blog/atom.xml",
             "icon": "fa-solid fa-rss",
         },
     ],
@@ -80,7 +80,7 @@ html_sidebars = {
 rediraffe_redirects = {}
 # Update the posts/* section of the rediraffe redirects to find all files
 redirect_folders = {
-    "posts": "blog",
+    "posts": "csamaf_blog",
 }
 
 for old, new in redirect_folders.items():
@@ -88,7 +88,7 @@ for old, new in redirect_folders.items():
         if newpath.suffix in [".ipynb", ".md"] and "ipynb_checkpoints" not in str(
             newpath
         ):
-            oldpath = str(newpath).replace("blog/", "posts/", 1)
+            oldpath = str(newpath).replace("csamaf_blog/", "posts/", 1)
             # Skip pandoc because for some reason it's broken
             if "pandoc" not in str(newpath):
                 rediraffe_redirects[oldpath] = str(newpath)
@@ -101,8 +101,8 @@ blog_authors = {
     "Felix": ("Felix Schindler", f"{blog_baseurl}/about/felix/"),
     "René": ("René Fritze", f"{blog_baseurl}/about/rene/"),
 }
-blog_path = "blog"
-blog_post_pattern = "blog/*/*"
+blog_path = "csamaf_blog"
+blog_post_pattern = "csamaf_blog/*/*"
 blog_feed_fulltext = True
 blog_feed_subtitle = f"{PROJECT_LONG}"
 fontawesome_included = True
