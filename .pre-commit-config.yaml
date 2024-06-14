@@ -20,15 +20,6 @@ repos:
   rev: v1.6.26
   hooks:
   - id: actionlint
-- repo: https://github.com/jackdewinter/pymarkdown
-  rev: v0.9.19
-  hooks:
-  - id: pymarkdown
-    alias: markdown-fix
-    args: [fix]
-  - id: pymarkdown
-    alias: markdown-lint
-    args: [scan]
 # this should go last since it will fix line endings broken by other tools
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.4.0
